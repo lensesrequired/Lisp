@@ -1,0 +1,242 @@
+=========================================================================
+             >> HOW TO INSTALL THE SNC XLISP ENVIRONMENT <<
+               This is the FIRST DOCUMENT you should read 
+=========================================================================
+                       Last Updated: Aug. 4, 2009
+=========================================================================
+ 
+INTRODUCTION
+ 
+The contents of this release duplicate the environment that we use at
+Sierra Nevada College to support XLISP.
+ 
+If you follow these instructions precisely, and if you have a conventional 
+Windows XP environment, then your installation should proceed without a 
+hitch. If you make an error during the installation procedure, or if you 
+do not follow these instructions correctly, or if your environment is not 
+Windows XP, then you are likely not to have a correctly running version 
+of XLISP when you are done.
+ 
+You only will need to perform this installation ONCE. after that, you 
+will be prepared to use XLISP for all future coursework.
+ 
+It is ASSUMED that YOU are sufficiently sophisticated and educated to 
+support yourself in installing this software. If this is not the case, 
+then we STRONGLY URGE YOU to contact your instructor for help. The SNC 
+Help Desk is NOT prepared to support this software, or its installation.
+ 
+It is VERY STRONGLY RECOMMENDED that you install all software in the 
+directory that we recommend.
+ 
+Note: With the exception of WinZip (see below), all this software is 
+free for personal use.
+ 
+Most likely, it will be VERY CONVENIENT if you print a copy of these 
+instructions before you begin. Then, check-off each step as it is 
+completed.
+ 
+=========================================================================
+ 
+COPYRIGHTS
+ 
+Portions of the manual and software are from XLISP which is Copyright (c) 
+1988, by David Michael Betz, all rights reserved. Mr. Betz grants 
+permission for unrestricted non-commercial use. Portions of XLISP-PLUS 
+from XLISP-STAT are Copyright (c) 1988, Luke Tierney. UNIXSTUF.C is from 
+Winterp 1.0, Copyright 1989 Hewlett Packard Company (by Niels Mayer). 
+Other enhancements and bug fixes are provided without restriction by Tom 
+almy, Mikael Pettersson, Neal Holtz, Johnny Greenblatt, Ken Whedbee, 
+Blake McBride, Leo Sarasúa, Pete Yadlowsky, and Richard Zidlicky.
+ 
+=========================================================================
+========================================================================= 
+ 
+                       I N S T A L L A T I O N
+ 
+=========================================================================
+=========================================================================
+Follow these instructions, PRECISELY in this order, to install your copy 
+of the SNC XLISP environment. If you do not properly follow aLL these 
+instructions, your XLISP environment may be incomplete, it may "misbehave" 
+in "strange and mysterious ways," and it may take considerable innovation 
+and insight in order to correct the problems you encounter.
+=========================================================================
+=========================================================================
+ 
+1.	System Requirements
+ 
+To start, you will need at least 1.4 MB free space on your hard disk for 
+the files included in this release.
+ 
+after installation, you should have at least 100 MB free space on your 
+hard disk in order to compile and execute XLISP programs. Your CPU 
+should be a Pentium. It should run at least at 200 MHz. You computer 
+should have at least 32 Meg RaM.
+ 
+You MaY be able to "get away" with less...  However, performance may 
+degrade to such a point that it just isn't worthwhile to use XLISP in 
+such a minimal and unresponsive environment.
+ 
+Note that essentially all computers purchased within the last few years
+meets or exceeds these minimums.
+ 
+=========================================================================
+ 
+2.	Run SCANDISK
+ 
+The very FIRST thing you should do, BEFORE installing any software, is 
+to run SCANDISK on your system. This will ensure that your hard drive 
+is free of cross-linked clusters and other defects that might interfere 
+with a successful installation. 
+ 
+Probably the easiest way to run SCANDISK is to click on My Computer,
+then to right-click on drive C: and select Properties. 
+Next, click the Tools tab. In Error Checking, click Check Now. In the 
+Check Disk dialog, you probably should check both "automatically fix..." 
+and "Scan for and attempt..."
+ 
+=========================================================================
+ 
+3.	Install WinZip
+ 
+File:	winzip90.exe (or the current version of WinZip)
+URL:	http://www.winzip.com
+ 
+WinZip is one of the finest applications available today for both 
+expanding and compressing files for transmission over the Internet (as 
+well as for backup). WinZip is provided as "shareware." This means 
+that you may try using WinZip for a reasonable period.  after that, you 
+should either pay for it. a single copy costs about $30. It provides 
+permanent lifetime use of WinZip and upgrades. You must have a properly 
+installed UnZip application in order to install the XLISP environment.
+ 
+You install WinZip by double-clicking the application, winzip81.exe.
+ 
+Follow the on-screen instructions. The Express Setup works fine. Only 
+select Custom Setup if you truly want to change one or more of the 
+advanced options (not recommended). Once WinZip is installed (or any 
+comparable UnZip product, or if you already have an UnZip product 
+installed) you are ready to begin the installation of XLISP.
+ 
+The rest of these instructions assume that you are familiar with running 
+WinZip (or a comparable UnZip utility). If you are not familiar with 
+how to unzip files from a ZIP archive, you should take a few minutes to 
+learn how to do so. This expertise is REQUIRED in order to install the 
+XLISP environment correctly.
+ 
+Note: If you already have software that can both create and "unzip" ZIP 
+archive files, you do not need to install WinZip.
+
+Note: WinZip is one of the finest applications available today for both 
+expanding and compressing files for transmission over the Internet (as 
+well as for backup). WinZip is provided as "shareware." This means that
+you may try using WinZip for a reasonable period. after that, you should
+pay for it. a single copy costs about $30. alternative freeware Zip
+utilities are available. Perhaps the best free Zipper/Unzipper available
+today is FreeZip (http://members.ozemail.com.au/~nulifetv/freezip/).
+You must have a properly installed UnZip application in order to install
+the Java environment. An alternative to WinZip that many students prefer
+to WinZip is WinRAR. There is a free version of WinRAR available. And,
+it will handle both ZIP and RAR files equally well, both for compression
+and for extraction. (http://www.rarlabs.com).
+ 
+=========================================================================
+ 
+4.	Install XLISP-PLUS 3.04
+ 
+File:	XLISP-PLUS.zip
+URL:    http://Snow.SierraNevada.edu/pub/SNCXLISP/
+ 
+This Zip archive contains the entire XLISP-PLUS Version 3.04 environment.
+(This Zip archive contains aLL the files in this directory. The files are
+provided individually, in case you wish to download them one-at-a-time.)
+There is no Windows installer, so you must perform the installation 
+manually.
+
+  a. Download XLISP-PLUS.zip and place the file on your desktop.
+  b. Right-click XLISP-PLUS.zip, and select WinZip | Extract to folder
+     C:...\XLISP-PLUS. Nine files will be extracted and placed in a
+     folder named XLISP-PLUS, located on your desktop.
+  c. Using Windows Explorer (or any other technique you like), MOVE this
+     XLISP-PLUS folder beneath C:\Program Files.
+  d. Open the XLISP-PLUS folder (whose full path now is
+     C:\Program Files\XLISP-PLUS).
+  e. You may now read the XLISP-PLUS manual (XLDOC.pdf) and explore the
+     XLISP Help system (xlisp300.hlp).
+  f. Drag the file (actually, the alias) named XLISP to your desktop.
+  g. You might want to update your PATH variable to include the
+     C:\Program Files\XLISP-PLUS directory. Then you can run XLISP from
+     anywhere.
+ 
+=========================================================================
+ 
+5.	Test your installation
+ 
+File:	Hello-World.lsp
+ 
+Double-click on the XLISP icon on your desktop. XLISP should launch.
+Click on File | Open/load...
+Using the browser, go to the C:\Program Files\XLISP-PLUS folder.
+Select the file Hello-World.lsp, and click Open.
+    Type:  (Hello-World)  [Enter]
+The Hello-World LISP function should execute, producing:
+ 
+Hello Lisp World
+ 
+        0
+        1
+        2
+        3
+        4
+NIL
+ 
+Type:  (exit)  [Enter]
+XLISP should terminate.
+ 
+In some versions of Windows the File | Open/Load menu command may not
+work (properly). In this case you can:
+    Type: (load "Hello-World.lsp")  [Enter]
+    Type: (Hello-World)  [Enter]
+at which point the Hello-World LISP function should execute as above.
+See the documentation for information about the (load) function.
+
+at this point your installation matches the one that we use at SNC. You 
+are now ready to begin to learn and use XLISP.
+ 
+=========================================================================
+ 
+6.	Congratulations!
+
+You have successfully installed a copy of the SNC XLISP environment on 
+your PC. It matches the one that we will be using for demonstrations 
+and in-class assignments. It is the one you should use for doing your 
+homework assignments.
+
+You now may discard the XLISP-PLUS.zip file if you wish -- you'll not
+need it unless you need to install XLISP-PLUS again.
+ 
+=========================================================================
+=========================================================================
+ 
+ 
+        ========================================
+         List of Files in the SNC XLISP Release
+        ========================================
+ 
+File Name                  File Contents
+----------------------------------------------------------
+Hello-World.lsp            Lisp source file
+Installation.txt           This file
+readme.upd.txt             XLISP-PLUS update history
+readme.win.txt             XLISP-PLUS info for Windows
+XLDOC.pdf                  XLISP-PLUS Manual
+XLISP                      Windows shortcut to xlwin32.exe
+xlisp300.hlp               XLISP-PLUS Help file
+xlispwin.exe               16-bit version of XLISP-PLUS
+xlwin32.exe                32-bit version of XLISP-PLUS
+ 
+=========================================================================
+ 
+Author:        Bary W Pollack
+Last updated:  4:28 PM 8/4/2009
+ 
