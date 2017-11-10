@@ -85,3 +85,37 @@
       (x y)
     )
 )
+
+(defun
+  mod3 (n)
+  (cond
+    ((>= n 3) (mod3 (- n 3)))
+    (t n)
+   )
+ )
+
+(defun
+  nth (n l)
+  (cond
+    ((> n 1) (nth (- n 1) (cdr l)))
+    (t (car l))
+   )
+ )
+
+(defun
+  remove (a l)
+  (cond
+    ((eq (car l) a) (cdr l))
+    (t (cons (car l) (remove a (cdr l))))
+   )
+ )
+
+(defun
+  min (l)
+  (cond
+    ((eq (length l) 1) (car l))
+    ((> (car l) (car (cdr l))) (min (cdr l)))
+    (t (min (cons (car l) (cdr (cdr l)))))
+   )
+ )
+
