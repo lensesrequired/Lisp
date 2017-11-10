@@ -86,6 +86,35 @@
     )
 )
 
+
+(defun
+  append (l1 l2)
+    (cond
+      ((null l1) l2)
+      (t (cons (car l1) (append (cdr l1) l2)))
+     )
+ )
+
+(defun
+  equalsimp (l1 l2)  ;return whether 2 simple lists are equal
+    (cond
+      ((null l1) (null l2))
+      ((null l2) nil)
+      ((eq (car l1) (car l2)) (equalsimp (cdr l1) (cdr l2)))
+      (t nil)
+     )
+ )
+
+(defun
+  equal (x y) ;returns whether two parameters are equal
+    (cond
+      ((atom x) (eq x y))
+      ((atom y) nil)
+      ((equal (car x) (car y)) (equal (cdr x) (cdr y)))
+      (t nil)
+     )
+ )
+
 (defun
   mod3 (n)
   (cond
@@ -119,3 +148,19 @@
    )
  )
 
+;BROKEN
+(defun
+  flatten (l)
+    (cond
+      ((atom (car l)) (cons (car l) (flatten (cdr l))))
+      (t (cons (flatten (car l)) (cons (flatten (cdr l)) nil)))
+     )
+ )
+
+(defun
+  flatten (l)
+    (cond
+      ((atom (car l)) (car l))
+      (t (cons (flatten (car l)) (cons (flatten (cdr l)) nil)))
+     )
+ )
