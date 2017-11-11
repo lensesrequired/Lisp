@@ -148,19 +148,19 @@
    )
  )
 
-;BROKEN
 (defun
   flatten (l)
     (cond
+      ((null (car l)) nil)
       ((atom (car l)) (cons (car l) (flatten (cdr l))))
-      (t (cons (flatten (car l)) (cons (flatten (cdr l)) nil)))
+      (t (append (flatten (car l)) (flatten (cdr l))))
      )
  )
 
 (defun
-  flatten (l)
-    (cond
-      ((atom (car l)) (car l))
-      (t (cons (flatten (car l)) (cons (flatten (cdr l)) nil)))
-     )
+  sort (l)
+  (cond
+    ((null l) nil)
+    (t (cons (min l) (sort (remove (min l) l))))
+   )
  )

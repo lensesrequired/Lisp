@@ -23,3 +23,12 @@
     (t (succ a (cdr l)))
    )
  )
+
+(defun
+  rotn (l n)
+  (cond
+    ((eq a (last l)) (car l))
+    ((eq a (car l)) (car (cdr l)))
+    (t (pred a (cdr l)))
+   )
+ )
