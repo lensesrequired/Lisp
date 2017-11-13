@@ -25,10 +25,16 @@
  )
 
 (defun
+  mod (a b)
+  (cond
+    ((>= a b) (mod (- a b)))
+    (t n)
+   )
+ )
+
+(defun
   rotn (l n)
   (cond
-    ((eq a (last l)) (car l))
-    ((eq a (car l)) (car (cdr l)))
-    (t (pred a (cdr l)))
+    ((> n 0)
    )
  )
