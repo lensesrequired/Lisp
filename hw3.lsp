@@ -1,4 +1,12 @@
 (defun
+  last (l)
+    (cond
+      ((null (cdr l)) l)
+      (t (last (cdr l)))
+    )
+)
+
+(defun
   length (l)
     (cond
       ((null l) 0)
@@ -7,12 +15,20 @@
 )
 
 (defun
-  last (l)
+  mod (a b)
+  (cond
+    ((>= a b) (mod (- a b) b))
+    (t a)
+   )
+ )
+
+(defun
+  append (l1 l2)
     (cond
-      ((null (cdr l)) l)
-      (t (last (cdr l)))
-    )
-)
+      ((null l1) l2)
+      (t (cons (car l1) (append (cdr l1) l2)))
+     )
+ )
 
 (defun
   pred (a l)
@@ -30,22 +46,6 @@
     ((eq a (car (cdr l))) (car l))
     (t (succ a (cdr l)))
    )
- )
-
-(defun
-  mod (a b)
-  (cond
-    ((>= a b) (mod (- a b) b))
-    (t a)
-   )
- )
-
-(defun
-  append (l1 l2)
-    (cond
-      ((null l1) l2)
-      (t (cons (car l1) (append (cdr l1) l2)))
-     )
  )
 
 (defun
